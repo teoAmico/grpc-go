@@ -21,3 +21,11 @@ grpcurl -plaintext 127.0.0.1:9090 grpc.health.v1.Health/Check
 sudo lsof -i :9090
 
 kill -9 'PID'
+
+## Running with Docker
+
+docker build .
+
+docker run -d -p 9090:9090 'imagine'
+
+grpcurl -plaintext 0.0.0.0:9090 grpc.health.v1.Health/Check
