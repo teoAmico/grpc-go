@@ -1,4 +1,4 @@
-module webstorespy-core
+module grpc-go
 
 go 1.15
 

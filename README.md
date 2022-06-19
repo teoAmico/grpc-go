@@ -14,6 +14,6 @@ grpcurl -plaintext 127.0.0.1:9090 grpc.health.v1.Health/Check
 
 ## check listener port
 
-sudo lsof -i :<PORT>
+sudo lsof -i :9090
 
-kill -9 <PID>
+kill -9 'PID'
